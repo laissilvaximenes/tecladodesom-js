@@ -9,11 +9,9 @@ function tocaSom (idElementoAudio) {
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-let contador = 0;
-
 // Laço de repetição
 
-while ( contador < listaDeTeclas.length) {
+for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
     const tecla = listaDeTeclas[contador];
     const instrumento = tecla.classList[1];
@@ -24,6 +22,5 @@ while ( contador < listaDeTeclas.length) {
         tocaSom(idAudio);
     }
 
-    contador = contador + 1;
 }
 
